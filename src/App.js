@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-import Header from "./components/Header"
+import Header from "./components/Header";
 import Footer from "./components/Footer";
+import MenuDefault from "./assets/images/Menu.jpeg"
 
 function App() {
   const [data, setData] = useState({});
@@ -40,15 +41,20 @@ function App() {
             <h2> {element.name}</h2>
             <div className="Meals">
             {element.meals.map((element2) => {
+              // console.log("meal => ", meal);
               return (
                 <div className="Content" key={element2.id}>
                   <div className="Object">
                     <h3> {element2.title}</h3>
                     <p>{element2.description.slice(0, 60)}</p>
-                    <h4>{element2.price} €</h4>
+                    <div className="Pricestar">
+                      <h4>{element2.price} €</h4>{element2.popular && (
+                      <span className="icon-STAR_FILL">Populaire</span>
+                    )}
+                    </div>
                   </div>
-                  <div>
-                    <img src={element2.picture} alt="p1" />
+                <div>
+                    <img src={element2.picture ? element2.picture : MenuDefault} alt="Menu" />
                   </div>
                 </div>
                );

@@ -1,4 +1,4 @@
-
+@import url("./assets/deliveroo-icons/style.css");
 
 /* ------------------- */
  /* -----HEADER----- */
@@ -58,6 +58,16 @@ h1 {
   object-fit: cover;
   margin: 30px;
   margin-top: 32px;
+}
+
+.Pricestar {
+  display: flex;
+}
+
+.Object span {
+  color: darkorange;
+  margin-left: 90px;
+  margin-top: 20px;
 }
 
 /* ------------------------------- */
