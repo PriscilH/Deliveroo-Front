@@ -7,8 +7,8 @@ const Basket = ({ basket, setBasket, total, setTotal }) => {
         <button
         className={
           basket.length === 0
-            ? "validation color-vide"
-            : "validation color-nonvide"
+            ? "confirmation color-vide"
+            : "confirmation color-nonvide"
         }
         onClick={() => {
           const newtab = [];

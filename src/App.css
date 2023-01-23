@@ -151,48 +151,113 @@ padding-bottom: 10px;
 /* ---------------------- */
   /* -----PANIER----- */
 /* ---------------------- */
-
-.basket {
-  background-color: #FFF;
-  width: 320px;
-  /* flex-shrink: 0; */
-  height: 500px;
-  min-height: 180px;
-  border-radius: 5px;
-  border: 2px solid green;
-}
-
-.basket-meals-list > div {
-  display: flex;
-  justify-content: space-between;
-  margin: 5px 0;
-}
-.basket-counter {
-  display: flex;
-}
-.basket-totals > div {
-  display: flex;
-  justify-content: space-between;
-}
-.basket-final-total {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* .retailbasket {
-  margin: 10px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}  */
-
-
 .Menu {
   display: flex;
   background-color: #f2f5f5
 }
 
+.Basket {
+  background-color: #FFF;
+  width: 350px;
+  /* flex-shrink: 0; */
+  height: max-content;
+  /* min-height: 180px; */
+  border-radius: 5px;
+  border: 2px solid #00cdbd;
+  margin-top: 20px;
+  margin-left: 15px;
+}
 
+.confirmation {
+  height: 50px;
+  width: 330px;
+  border-radius: 5px;
+  margin: 10px;
+  border: none;
+  font-size: 16px;
+  line-height: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.color-vide {
+  background-color: #bac3c3;
+  color: grey;
+}
+
+.color-nonvide {
+  background-color: #00cdbd;
+  color: white;
+}
+
+.Retailsbasket {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.Retailsbasket > div {
+  display: flex;
+  align-items: center;
+}
+
+.Retailsbasket > p {
+  display: flex;
+  align-items: center;
+}
+
+.Retailsbasket button {
+  border-radius: 50%;
+  border: 0.1px solid #00cdbd;
+  background-color: white;
+  color: #00cdbd;
+}
+
+.Retails-qty {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.Retailstitle {
+  padding-left: 10px;
+}
+
+.Confirm-2 {
+  margin: 10px;
+}
+
+.trait {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 0.1px solid rgb(229, 225, 225);
+}
+
+.totaux {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.finaltotals {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(82, 77, 77);
+  display: flex;
+  justify-content: space-between;
+}
+
+.panier-vide {
+  height: 110px;
+  color: #a3a3a3;
+  font-size: 16px;
+  line-height: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* ---------------------- */
   /* -----FOOTER----- */
