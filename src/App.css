@@ -50,7 +50,7 @@ h1 {
   margin-right: 105px;
 }
 
-.Menuheader {
+.Picheader {
   width: 350px;
   height: 198px;
   border-radius: 5px;
@@ -75,7 +75,7 @@ h1 {
 /* ------------------------------ */
 
 .Container {
-  background-color: #f2f5f5;
+  /* background-color: #f2f5f5; */
   padding-top: 10px;
 }
 
@@ -147,6 +147,52 @@ padding-bottom: 10px;
   color: #808484;
   font-weight: 400;
 }
+
+/* ---------------------- */
+  /* -----PANIER----- */
+/* ---------------------- */
+
+.basket {
+  background-color: #FFF;
+  width: 320px;
+  /* flex-shrink: 0; */
+  height: 500px;
+  min-height: 180px;
+  border-radius: 5px;
+  border: 2px solid green;
+}
+
+.basket-meals-list > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+.basket-counter {
+  display: flex;
+}
+.basket-totals > div {
+  display: flex;
+  justify-content: space-between;
+}
+.basket-final-total {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .retailbasket {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}  */
+
+
+.Menu {
+  display: flex;
+  background-color: #f2f5f5
+}
+
+
 
 /* ---------------------- */
   /* -----FOOTER----- */
