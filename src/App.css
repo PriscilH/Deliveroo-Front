@@ -75,7 +75,7 @@ h1 {
 /* ------------------------------ */
 
 .Container {
-  /* background-color: #f2f5f5; */
+  background-color: #f2f5f5;
   padding-top: 10px;
 }
 
@@ -151,24 +151,66 @@ padding-bottom: 10px;
 /* ---------------------- */
   /* -----PANIER----- */
 /* ---------------------- */
+
+
 .Menu {
   display: flex;
-  background-color: #f2f5f5
+  background-color: #f2f5f5;
 }
 
 .Basket {
   background-color: #FFF;
-  width: 350px;
-  /* flex-shrink: 0; */
+  width: 350px; 
+  flex-shrink: 0;
   height: max-content;
-  /* min-height: 180px; */
-  border-radius: 5px;
+  min-height: 180px;
+  border-radius: 5px; 
   border: 2px solid #00cdbd;
   margin-top: 20px;
   margin-left: 15px;
+  padding: 10px;
+  position: sticky;
+  top:20px;
 }
 
-.confirmation {
+.basket-meals-list > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  
+}
+.basket-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5px;
+}
+.basket-counter p{
+  padding: 8px;
+}
+
+.basket-counter button{
+  border-radius: 50%;
+  border: 2px solid #00cdbd;
+  background-color: white;
+  color: #00cdbd;
+  font-size: 20px;
+  font-weight: 500;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.basket-totals > div {
+  display: flex;
+  justify-content: space-between;
+}
+.basket-final-total {
+  display: flex;
+  justify-content: space-between;
+}
+ .confirmation {
   height: 50px;
   width: 330px;
   border-radius: 5px;
@@ -188,7 +230,7 @@ padding-bottom: 10px;
 .color-nonvide {
   background-color: #00cdbd;
   color: white;
-}
+}/*
 
 .Retailsbasket {
   margin: 10px;
@@ -212,6 +254,7 @@ padding-bottom: 10px;
   border: 0.1px solid #00cdbd;
   background-color: white;
   color: #00cdbd;
+  
 }
 
 .Retails-qty {
@@ -257,7 +300,7 @@ padding-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */ 
 
 /* ---------------------- */
   /* -----FOOTER----- */

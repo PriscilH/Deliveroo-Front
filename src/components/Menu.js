@@ -1,8 +1,16 @@
 import Meal from "./Meal";
-import Basket from "./Basket";
+import { useState } from "react";
+// import Basket from "./Basket";
 
 const Menu = ({data, basket, setBasket, total, setTotal }) => {
-      
+  const [confirm, setConfirm] = useState(true);
+  const getSubTotal = (array) => {
+    let total = 0;
+    for (let i = 0; i < array.length; i++) {
+      total = total + array[i].price * array[i].quantity;
+    }
+    return total;
+  };
   return (
     <div className="Menu">
     <div className="Container">
@@ -33,9 +41,23 @@ const Menu = ({data, basket, setBasket, total, setTotal }) => {
        );
      })}
     </div>
-
-    {/* {basket.length > 0 ? (
-    <div className="basket">
+    
+    {basket.length > 0 ? (
+    <div className="Basket">
+      <button
+        className={
+          basket.length === 0
+            ? "confirmation color-vide"
+            : "confirmation color-nonvide"
+        }
+        onClick={() => {
+          const newtab = [];
+          setBasket(newtab);
+          setConfirm(false);
+        }}
+      >
+        Valider mon panier
+      </button>
      <div className="basket-meals-list">
               {basket.map((element, index) => {
                 console.log("basket element >", element);
@@ -112,14 +134,15 @@ const Menu = ({data, basket, setBasket, total, setTotal }) => {
           <div className="basket">
             <p>Votre panier est vide</p>
           </div>
-        )} */}
-        <Basket
+        )}
+        {/* <Basket
           basket={basket}
           setBucket={setBasket}
           total={total}
           setTotal={setTotal}
         />
-</div>
+</div> */}
+    </div>
     
     );
 };
