@@ -132,7 +132,7 @@ const Menu = ({data, basket, setBasket, total, setTotal }) => {
           </div>
         ) : (
           <div className="basket">
-            <p>Votre panier est vide</p>
+            {confirm ? <p> Votre panier est vide</p> : <p> Panier validé </p>}
           </div>
         )}
         {/* <Basket
